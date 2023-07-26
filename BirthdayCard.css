@@ -1,0 +1,84 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: hsl(189, 48%, 37%);
+    animation: fadeInAnimation 1s forwards;
+    
+}
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.card {
+    background-color: hsl(0, 10%, 55%);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    margin: 50px auto;
+    opacity: 0; 
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.animated {
+    animation: blink 1s infinite;
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+}
+
+h1 {
+    color: #333;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.blink-animation {
+    
+    animation: blink 1s infinite;
+}
+
+p {
+    color: #0c0a0a;
+    font-size: 18px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+
+@media (max-width: 768px) {
+    .card {
+        max-width: 50%;
+    }
+}
